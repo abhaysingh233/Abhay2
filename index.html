@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3795fc00ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#service">service</a></li>
+                    <li><a href="#work">work</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>HI, <span>Krishna</span><br> Garden From Bhilai </h1>
+            </div>
+        </div>
+    </div>
+    <!------------about-------->
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About Garden</h1>
+                <p>We have a Package according to decoration for the customer ther is rooms 
+                    now times the garden is popular and there is much better facilty or 
+                thing compare with other and we have parking space much better to other in bhilai </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Garden')">Garden</p>
+                    <p class="tab-links"onclick="opentab('Booking')">Booking</p>
+                </div>
+                <div class="tab-content active-tab"id="Garden">
+                    <ul>
+                        <li><span>UI/UX</span><br>Decoration for Marriage/Birthday</li>
+                        <li><span>Marriage hall</span><br>Marriage</li>
+                        <li><span>Birthday hall</span><br>Birthday</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-content active-tab" id="Booking">
+                    <ul>
+                        <li><span>2024- Current</span><br>Decoration for Marriage/Birthday hall</li>
+                        <li><span>silver package</span><br>75000</li>
+                        <li><span>Gold package</span><br>1,20000</li>
+                        <li><span>diamond package</span><br>1,50000</li>
+                    </ul>
+                    <h3>The images of garden are in the pdf of images </h3> 
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----service------>
+<div class="service">
+    <div class="container">
+        <h1 class="Sub-title">service</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-bed"></i>
+                <h2>rooms</h2>
+                <p>there are 5 rooms which are full furnite and clean rooms with ac</p>
+                <a href="#">Learn more</a>
+            </div>
+<div>
+    <i class="fa-solid fa-explosion"></i>
+                <h2>Decoration</h2>
+                <p>the decoration which if u want that we do or other wise we have much beautifull decoration</p>
+                <a href="#">Learn more</a>
+            </div>
+<div>
+    <i class="fa-solid fa-car"></i>
+                <h2>parking</h2>
+                <p>we have for both car and bike parking and much spaces for more than 2000 people</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!------portfolio----->
+<div id="work">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="work-1.png.jpeg" >
+            <div class="layer">
+                <h3>Main stage 1</h3>
+                <p>This type of we do decoration if u like it then thank u for you</p>
+                <a href=""><i class="fa-solid fa-snowflake"></i></a>
+            </div>
+        </div>  <div class="work">
+            <img src="work-2.png.jpeg" >
+            <div class="layer">
+                <h3>Main stage 2</h3>
+                <p>This type of we do decoration if u like it then thank u for you</p>
+                <a href=""><i class="fa-solid fa-snowflake"></i></a>
+            </div>
+        </div>  <div class="work">
+            <img src="work-3.png.jpeg" >
+            <div class="layer">
+                <h3>Front Gate</h3>
+                <p>This type of we do decoration if u like it then thank u for you</p>
+                <a href=""><i class="fa-solid fa-snowflake"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+<!-----contact----->
+<div id="contact">
+<div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>patelabhay724@gmail.com</p>
+        <p><i class="fa-solid fa-mobile"></i>6262152161</p>
+        <p>__abhay0327__</p>
+        <div class="social-icon">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <a href="ks.pdf" download class ="btn btn2">Download images</a>
+    </div>
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder=" your name" required>
+
+            <input type="email" name="email" placeholder="your email" required>
+            <input type="booking" name="amount" placeholder="your booking" required>
+
+            <textarea name="Message" rows="6"  placeholder="your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg sent"></span>
+    </div>
+</div>
+</div>
+<div class="copyright">
+    <p>copyright~~ Krishna Garden .</p>
+</div>
+</div>
+
+
+    <script>
+        var tablinks  = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            } for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classlist.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        } 
+        function closemenu(){
+            sidemenu.style.right="-200";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw_b4EcgnlZHa1qUrqxtyvLDwk9DPdqavd2B-n30iKFga8g8hc8zqG4ndWQhvbeUzqr/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTMl="Message Sent"
+        setTimeout(function(){
+            msg.innerHTMl=""
+        },5000)
+        form.reset()
+        
+
+        
+    })
+    .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
